@@ -1,0 +1,16 @@
+- hosts: common
+  user: root
+  gather_facts: yes
+  roles:
+  - role: common
+
+- hosts: docker
+  user: root
+  gather_facts: yes
+  roles:
+  - role: docker
+
+- hosts: mongo
+  user: root
+  roles:
+  - role: mongod
