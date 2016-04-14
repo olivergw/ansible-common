@@ -34,4 +34,4 @@ Then run:
 $ ansible-playbook -i hosts site.yml
 ````
 
-Inside the root directory there is an ansible.cfg file, this is used to cache results from *gather_facts.* This means as each playbook is run the facts can be reused and not incur a hefty wait while it goes to collect them again.
+Inside the root directory there is an ansible.cfg file, this includes a few lines for fast caching results from *gather_facts.* This means as each playbook is run the facts can be reused and not incur a hefty wait while it goes to collect them again.
