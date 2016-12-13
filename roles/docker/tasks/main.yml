@@ -31,7 +31,7 @@
   when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
 
 - name: Start Docker
-  service: name=docker-engine state=started
+  service: name=docker state=started
   when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'  
   
 - name: Get Docker-Compose
